@@ -10,7 +10,9 @@ package br.com.aulaheranca;
  */
 public class TstPes {
     public static void main(String[] args) {
-        Professor prof = new Professor();
+        //Test
+        Professor prof;
+        prof = new Professor();
         prof.setNome("Professor Jose Luiz"); //usado por meio de heranca da classe pessoa
         prof.setCpf(25); //usado por meio de heranca da classe pessoa
         prof.setSalario(1000); //pertence a propria classe
