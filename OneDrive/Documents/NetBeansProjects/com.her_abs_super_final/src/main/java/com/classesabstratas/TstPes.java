@@ -1,16 +1,18 @@
-package com.polimorfismo_sobr;
+package com.classesabstratas;
 
 public class TstPes {
-
    public static void main(String[] args) {
-        Professor prof = new Professor();
-        //prof.impLocal();//utilizando metodo impLocal por heranca da classe Pessoa 
+        Professor pes1 = new Professor();//estou falando para o pes1 se comportar como Professor classe filha.
+        pes1.impLocal();
+        //pes1 = new Pessoa();// prof = new Professor();
+        
+        /*
         Pessoa pes1 = new Pessoa();
         pes1.impLocal();
         
         Pessoa pes2 = new Professor();//polimorfismo por coecao, se comporta com outro objeto
         pes2.impLocal();
-       
+        */
    }
 }   
     

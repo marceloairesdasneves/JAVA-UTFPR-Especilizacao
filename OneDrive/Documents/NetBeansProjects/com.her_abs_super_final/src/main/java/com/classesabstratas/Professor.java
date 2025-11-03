@@ -1,4 +1,4 @@
-package com.polimorfismo_sobr;
+package com.classesabstratas;
 
 public class Professor extends Pessoa {
     private int salario;
@@ -6,11 +6,13 @@ public class Professor extends Pessoa {
 
     //=========================================================
 
+    
     @Override
     public void impLocal(){
         System.out.println("\nEstou na classe FILHA - professor");
         //super.impLocal();//utilizando o recurso super para apontar da classe filha chamando o metodo da classe MAE.
     }
+   
     //=========================================================
 
 

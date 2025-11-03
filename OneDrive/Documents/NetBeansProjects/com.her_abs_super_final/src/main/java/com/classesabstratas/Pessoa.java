@@ -1,13 +1,11 @@
-package com.polimorfismo_sobr;
+package com.classesabstratas;
 
-public class Pessoa {
+public abstract class Pessoa {//classe abstract como uma classe Mae, utilizando seus objetos 
     private int cpf;
     private String nome;
 
     //=========================================================
-    public void impLocal(){
-        System.out.println("\nEstou na classe MAE Pessoa");
-    }
+    public abstract void impLocal(); //metodo abstract nao pode ter corpo. Isso e regra
     //=========================================================
 
     public int getCpf(){
