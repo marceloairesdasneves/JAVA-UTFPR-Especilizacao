@@ -12,18 +12,15 @@ import java.util.Scanner;
  * @author USER
  */
 public class Leitura {
+
     public String entDados(String rotulo) {
         String ret = "";
 
-        try {
-            Scanner leitura = new Scanner(System.in);
+        try (Scanner leitura = new Scanner(System.in)) {
             System.out.println(rotulo);
             ret = leitura.nextLine();
-            leitura.close();
-
-            } catch (NoSuchElementException | IllegalStateException e) {
-                System.out.println("\nERRO ao ler os dados: ");
-                
+        } catch (NoSuchElementException | IllegalStateException e) {
+            System.out.println("\nERRO ao ler os dados: ");
         }
         return ret;
     }
